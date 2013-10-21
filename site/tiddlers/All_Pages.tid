@@ -1,0 +1,3 @@
+title: All Pages
+
+<$list filter="[!is[system]sort[title]]" />

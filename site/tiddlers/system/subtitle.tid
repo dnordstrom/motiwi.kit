@@ -1,0 +1,4 @@
+title: $:/core/ui/ViewTemplate/subtitle
+tags: $:/tags/ViewTemplate
+
+<div class="tw-subtitle">Updated <$view field="modified" format="relativedate"/></div>

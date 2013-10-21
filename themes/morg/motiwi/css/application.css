@@ -1,0 +1,765 @@
+/**
+* Customizations to the Snow White theme.
+*
+* These will merge with base.tid styles once TiddyWiki5 is out of beta.
+*/
+
+html body {
+  color: #444444;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6em;
+  margin: 0;
+  padding: 0;
+}
+
+b, strong {
+  font-weight: 500;
+}
+
+small {
+  font-size: 14px;
+}
+
+/**
+ * Links
+ */
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.tw-tiddlylink-missing:after,
+.tw-tiddlylink-external:after {
+  display: inline-block;
+  font-family: "Icons";
+  font-size: 10px;
+  line-height: 10px;
+  margin: 0px 0px 0px 0.35em;
+  position: relative;
+  top: -1px;
+}
+
+.tw-tiddlylink-missing:after {
+  content: "\f044";
+}
+
+.tw-tiddlylink-external:after {
+  content: "\f08e";
+}
+
+/**
+ * Logo
+ */
+
+#logo {
+  text-align: center;
+  opacity: 0.42;
+  padding: 112px 0 0px;
+  transition: opacity 0.3s linear;
+}
+
+#logo.active {
+  opacity: 0.8;
+}
+
+/**
+ * Headings and titles
+ */
+
+h1.title a {
+  color: #444444;
+  font-size: 42px;
+  text-decoration: none;
+}
+
+h2.tw-subtitle {
+  color: #999999;
+  padding: 8px 0 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #222222;
+  font-weight: 300;
+  font-size: 18px;
+  margin: 0;
+}
+
+h1.title {
+  font-size: 48px;
+  line-height: 54px;
+}
+
+h1 {
+  font-size: 34px;
+  line-height: 38px;
+}
+
+.ui.message div.header {
+  font-weight: 300;
+}
+
+.ui.basic.accordion .title {
+  color: #222222;
+}
+
+.ui.accordion .title .dropdown.icon {
+  margin-right: -0.15em;
+}
+
+.ui.accordion .content {
+  padding: 0;
+}
+
+.body p {
+  font-size: 18px;
+  line-height: 1.6em;
+  margin: 0px 25px 21px 0px;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
+.body h1 {
+  margin: 28px 0px 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 0px 0px 8px;
+}
+
+.body h2 {
+  font-size: 26px;
+  line-height: 1.3em;
+  margin-bottom: 0.5em;
+}
+
+.body h3 {
+  font-weight: 400;
+  line-height: 1.25em;
+  margin: 0 0 8px 0;
+}
+
+.story-river {
+  margin: 0 auto;
+  max-width: 48em;
+  padding: 0 0 100px 0;
+}
+
+.tw-tiddler-frame {
+  width: 100%;
+}
+
+.story-river > .tw-list-frame .tw-tiddler-frame {
+  margin: 0 0 120px 0;
+}
+
+.tw-tags-wrapper {
+  margin: 0 0 24px 0;
+}
+
+.tw-tiddler-controls {
+  border: none;
+  float: right;
+  transform: scale(0.75) translate3d(0, 0, 0);
+  transition: all 0.25s ease-out;
+}
+
+.tw-tidder-controls button {
+  
+}
+
+.tw-tiddler-controls button,
+.tw-page-controls button,
+.tw-page-controls a {
+  background: transparent;
+  border: none;
+  margin: 0;
+  cursor: pointer;
+}
+
+.tw-tiddler-controls button i.icon,
+.tw-page-controls button i.icon,
+.tw-page-controls a i.icon {
+  border: 3px solid #444444;
+  margin: 0px;
+  color: #444444;
+  font-size: 2.4em;
+  text-decoration: none;
+  border-radius: 200px;
+  height: 75px;
+  width: 75px;
+  line-height: 68px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.tw-tiddler-controls button i.icon {
+  height: 50px;
+  width: 50px;
+  line-height: 45px;
+}
+
+.tw-tiddler-controls button i.icon.remove {
+  line-height: 43px;
+}
+
+.tw-tiddler-controls button i.icon.edit {
+  line-height: 47px;
+  text-indent: 4px;
+}
+
+.tabular button {
+  border-bottom: none;
+}
+
+svg.tw-image-new-button,
+svg.tw-image-options-button,
+svg.tw-image-save-button,
+svg.tw-image-info-button,
+svg.tw-image-edit-button,
+svg.tw-image-close-button,
+svg.tw-image-delete-button,
+svg.tw-image-cancel-button,
+svg.tw-image-done-button {
+  fill: #000;
+}
+
+svg.tw-image-new-button:hover,
+svg.tw-image-options-button:hover,
+svg.tw-image-save-button:hover,
+svg.tw-image-info-button:hover,
+svg.tw-image-edit-button:hover,
+svg.tw-image-close-button:hover,
+svg.tw-image-delete-button:hover,
+svg.tw-image-cancel-button:hover,
+svg.tw-image-done-button:hover {
+  fill: #000;
+}
+
+/**
+ * Spacing
+ */
+
+/* Sidebar page controls */
+.tw-page-controls {
+  margin: 20px 0 0 0;
+}
+
+/* Sidebar search field */
+.tw-search {
+  margin: 35px 0 25px 0;
+}
+
+/**
+ * Search
+ */
+
+#search {
+  padding: 85px 0;
+  position: relative;
+  text-align: center;
+}
+
+#search input {
+  font-weight: 200;
+}
+
+.ui.search {
+  display: inline-block;
+  width: 500px;
+}
+
+.search-results {
+  width: 400px;
+  margin: 0px auto;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-top: none;
+  padding: 8px 0;
+  text-align: left;
+}
+
+.search-results .tw-list-element {
+  display: block;
+  padding: 0 8px;
+}
+
+.tw-list-frame.top,
+.tw-list-frame.bottom {
+  display: block;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: right;
+}
+
+.tw-list-frame.top {
+  margin-bottom: 7px;
+}
+
+.tw-list-frame.bottom {
+  margin-top: 7px;
+}
+
+/**
+ * Main menu
+ */
+
+.main.menu {
+  top: 0;
+}
+
+.main.menu a {
+  color: #FFFFFF;
+}
+
+.ui.main.menu.fixed {
+  z-index: 10000;
+}
+
+.ui.item {
+  cursor: pointer;
+}
+
+.ui.main.menu .tw-button {
+  border: none;
+  background: transparent;
+  font-size: 1em;
+  margin: -3px -3px 0px -3px;
+  padding: 0;
+}
+
+.ui.main.menu .tw-button i.icon {
+  background: transparent;
+}
+
+.ui.menu .menu .tw-button {
+  margin: -0.5em -0.5em 0px;
+}
+
+.ui.menu .item.icon a {
+  text-decoration: none;
+}
+
+.ui.menu .item.icon a i {
+  background: transparent;
+}
+
+/**
+ * Sidebar
+ */
+
+.launch.button {
+  position: fixed;
+  top: 63px;
+  z-index: 500;
+  width: 70px;
+}
+
+/**
+ * Tags
+ * Copied from Semantic UI due to different class name.
+ */
+
+.tw-tags-wrapper .tw-button {
+  background: transparent;
+  border: none;
+  margin: -0.25em 0.25em 0em;
+  padding: 0;
+}
+
+.tw-tags-autocomplete-wrapper .tw-tag-label,
+.tw-edit-tags-list .tw-tag-label,
+.tw-tags-wrapper .tw-button .tw-tag-label {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #E8E8E8;
+  border-color: #E8E8E8;
+  padding: 0.5em 0.8em;
+  color: rgba(0, 0, 0, 0.65);
+  text-transform: uppercase;
+  font-weight: normal;
+  -webkit-border-radius: 0.325em;
+  -moz-border-radius: 0.325em;
+  border-radius: 0.325em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: background 0.1s linear;
+  -moz-transition: background 0.1s linear;
+  -o-transition: background 0.1s linear;
+  -ms-transition: background 0.1s linear;
+  transition: background 0.1s linear;
+}
+
+.tw-tags-autocomplete-wrapper .tw-tag-label,
+.tw-edit-tags-list .tw-tag-label {
+  font-size: 0.8em;
+  padding: 0.25em 0 0.25em 0.5em;
+  line-height: 1em;
+}
+
+.tw-tags-autocomplete-wrapper .tw-tag-label {
+  padding: 0.25em 0.5em;
+}
+
+.tw-tags-autocomplete-wrapper .tw-tag-label:first-of-type,
+.tw-edit-tags-list .tw-tag-label:first-of-type,
+.tw-tags-wrapper .tw-button:first-child {
+  margin-left: 0em;
+}
+
+.tw-tags-autocomplete-wrapper .tw-tag-label:last-of-type,
+.tw-edit-tags-list .tw-tag-label:last-of-type,
+.tw-tags-wrapper .tw-button:last-child {
+  margin-right: 0em;
+}
+
+.tw-tags-autocomplete-wrapper .tw-tag-label:hover,
+.tw-edit-tags-list .tw-tag-label:hover,
+a.tw-tags-wrapper .tw-button:hover .tw-tag-label {
+  background-color: #E0E0E0;
+  border-color: #E0E0E0;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.tw-tags-autocomplete-wrapper
+.tw-edit-tags-list .tw-tag-label:hover:before,
+a.tw-tags-wrapper .tw-button:hover .tw-tag-label:before {
+  background-color: #E0E0E0;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/**
+ * Drop downs
+ * Copied from Semantic UI due to different class name.
+ */
+
+.tw-drop-down {
+  margin: 0 0.25em;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 0.1875rem;
+}
+
+.tw-view-link {
+  display: block;
+  padding: 0 0.5em;
+}
+
+.tw-view-link:hover {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.1);
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Notifications
+ * Copied from Semantic UI due to different class name.
+ */
+
+/* .ui.message from Semantic UI */
+.tw-notification {
+  position: relative;
+  min-height: 18px;
+  margin: 1em 0em;
+  height: auto;
+  background-color: #EFEFEF;
+  padding: 1em;
+  line-height: 1.33;
+  color: rgba(0, 0, 0, 0.6);
+  -webkit-transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease, box-shadow 0.1s ease;
+  -moz-transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease, box-shadow 0.1s ease;
+  -o-transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease, box-shadow 0.1s ease;
+  -ms-transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease, box-shadow 0.1s ease;
+  transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease, box-shadow 0.1s ease;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 0.325em 0.325em 0.325em 0.325em;
+  -moz-border-radius: 0.325em 0.325em 0.325em 0.325em;
+  border-radius: 0.325em 0.325em 0.325em 0.325em;
+}
+
+/* Notifications from snowwhite theme */
+.tw-notification {
+	position: fixed;
+	top: 14px;
+	right: 14px;
+	z-index: 1000;
+	max-width: 280px;
+}
+
+/* Adjustments */
+.tw-notification {
+	margin: 0;
+  padding: 1em;
+  top: 57px; /* 43 + 14 */
+}
+
+.tw-notification p {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Textareas
+ * Copied from Semantic UI inputs.
+ */
+
+textarea {
+  width: 100%;
+  font-family: Inconsolata, monospace;
+  line-height: 1.4em;
+  margin: 0em;
+  padding: 0.85em 1.2em;
+  font-size: 0.875em;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  outline: none;
+  color: rgba(0, 0, 0, 0.7);
+  -webkit-border-radius: 0.3125em;
+  -moz-border-radius: 0.3125em;
+  border-radius: 0.3125em;
+  -webkit-transition: background-color 0.3s ease-out, box-shadow 0.2s ease, border-color 0.2s ease;
+  -moz-transition: background-color 0.3s ease-out, box-shadow 0.2s ease, border-color 0.2s ease;
+  -o-transition: background-color 0.3s ease-out, box-shadow 0.2s ease, border-color 0.2s ease;
+  -ms-transition: background-color 0.3s ease-out, box-shadow 0.2s ease, border-color 0.2s ease;
+  transition: background-color 0.3s ease-out, box-shadow 0.2s ease, border-color 0.2s ease;
+  -webkit-tap-highlight-color: 
+  rgba(255, 255, 255, 0);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+textarea:focus {
+  border-color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.85);
+}
+
+/**
+ * Buttons
+ */
+
+.tw-remove-tag-button {
+  background: transparent;
+  border: none;
+}
+
+.button.fluid.attached {
+  margin-bottom: 30px;
+}
+
+.tw-fieldmangler .form {
+  margin: 0 0 1em 0;
+}
+
+.tw-fieldmangler .button {
+  margin-top: 6px;
+}
+
+/**
+ * Forms
+ */
+
+.tw-inline-style.input {
+  width: 425px;
+}
+
+.edit-tags-field {
+  margin: 12px 0;
+}
+
+/**
+ * Encryption
+ *
+ * Taken from Semantic UI, since original styles are applied inline with JavaScript.
+ */
+
+body .tw-password-wrapper {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+  padding: 34px 40px;
+  top: 30%;
+}
+
+body .tw-password-wrapper input {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 0.3125em;
+  -moz-border-radius: 0.3125em;
+  border-radius: 0.3125em;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 0.85em 1.2em;
+  font-size: 0.875em;
+}
+
+body .tw-password-wrapper input:focus {
+  border-color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.85);
+}
+
+body .tw-password-wrapper::-web inputkit-input-placeholder {
+  color: #E0E0E0;
+}
+
+body .tw-password-wrapper::-moz input-placeholder {
+  color: #E0E0E0;
+}
+
+body .tw-password-wrapper button {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  min-height: 1em;
+  outline: none;
+  border: none;
+  background-color: #5C6166; /* Black */
+  color: #FFFFFF; /* Black */
+  padding: 0.8em 1.5em;
+  font-size: 1.125rem; /* Large */
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+  text-decoration: none;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  border-radius: 0.2em;
+  -webkit-box-shadow: 0em -0.185rem 0em rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0em -0.185rem 0em rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0em -0.185rem 0em rgba(0, 0, 0, 0.1) inset;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transition: opacity 0.25s ease, background-color 0.25s ease, color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+  -moz-transition: opacity 0.25s ease, background-color 0.25s ease, color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+  -o-transition: opacity 0.25s ease, background-color 0.25s ease, color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+  -ms-transition: opacity 0.25s ease, background-color 0.25s ease, color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+  transition: opacity 0.25s ease, background-color 0.25s ease, color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Customization */
+body .tw-password-wrapper button {
+  margin: -4px 0 0 8px;
+}
+
+body .tw-password-wrapper h1 {
+  font-size: 1.6em;
+  font-family: "Source Sans Pro";
+  line-height: 1.4em;
+  margin: 0px 0px 1em;
+}
+
+/**
+ * Blockquotes
+ */
+
+blockquote {
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  color: rgb(102, 102, 102);
+  line-height: 25px;
+  font-size: 16px;
+  padding: 10px 30px;
+  text-align: center;
+  margin: 2.4em 80px;
+}
+
+.body blockquote p {
+  font-size: 15px;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+blockquote p:before,
+q:before {
+  content: open-quote;
+}
+
+blockquote p:last-of-type:after,
+q:after {
+  content: close-quote;
+}
+
+blockquote small {
+  display: block;
+  line-height: 1.428571429;
+  color: #999999;
+  padding: 8px 0 0;
+  text-align: center;
+}
+
+/**
+ * Code
+ */
+
+code, pre {
+  font-family: Inconsolata, monospace;
+  font-size: 17px;
+}
+
+/**
+ * Semantic UI corrections and adjustments
+ */
+
+.ui.popup .content {
+  text-align: center;
+}
+
+i.icon {
+  cursor: default;
+}
+
+.body .ui.label {
+  line-height: 1em;
+  text-align: center;
+}
+
+.body .ui.label .icon {
+  margin: 0;
+}
+
+.ui.list .description {
+  margin-top: 5px;
+}
+
+.ui.list .item > .content {
+  line-height: 1.5em;
+}
+
+td.term {
+  text-align: right;
+}

@@ -1,0 +1,8 @@
+{
+	"title": "$:/themes/motiwi/motiwi",
+	"name": "MOrg TiddyWiki Theme",
+	"author": "Morgan",
+	"core-version": ">=5.0.0",
+	"plugin-type": "theme",
+	"description": "A plain simple theme that emphasises individual tiddlers"
+}

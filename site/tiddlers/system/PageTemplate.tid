@@ -1,0 +1,153 @@
+title: $:/core/ui/PageTemplate
+
+<!-- The navigator catches navigation events and updates the story and history tiddlers -->
+<$navigator story="$:/StoryList" history="$:/HistoryList">
+
+<$import browse="no" class="tw-drop-zone-fullscreen">
+
+<!-- Sidebar -->
+<div class="ui vertical sidebar menu">
+  <div class="item"> 
+    <i class="rocket icon"></i>
+    <$link to="Getting Started">Home</$link>
+  </div>
+  <div class="item"> 
+    <i class="book icon"></i>
+    <$link to="AllPages">All Pages</$link>
+  </div>
+
+  <div class="item"> 
+    <i class="help icon"></i>
+    <b>Help</b>
+
+    <div class="menu"> 
+      <span class="item"> 
+        <$link to="TiddlyWiki">About</$link>
+      </span>
+      <span class="item"> 
+        <$link to="Help">Help Page</$link>
+      </span>
+      <span class="item"> 
+        <$link to="Getting Started">Getting Started</$link>
+      </span>
+      <span class="item"> 
+        <$link to="WikiText">Text Formatting</$link>
+      </span>
+      <span class="item"> 
+        <$link to="http://five.tiddlywiki.com/">Official Manual</$link>
+      </span>
+    </div>
+  </div>
+</div>
+
+<!-- Top Bar -->
+<div class="ui fixed transparent inverted main menu">
+  <div class="container"> 
+    <a class="item icon toggle" title="Toggle sidebar" data-position="bottom left" href="#"> 
+      <i class="icon reorder"></i>
+    </a>
+    
+    <div class="title item"> 
+      {{SiteTitle}}
+    </div>
+    
+    <a class="item icon popup" title="Download As File" data-position="bottom center"> 
+      <$button message="tw-save-wiki"><i class="inverted icon download disk"></i></$button>
+    </a>
+    
+    <a class="item icon popup" title="New Page" data-position="bottom center"> 
+      <$button message="tw-new-tiddler"><i class="inverted icon edit"></i></$button>
+    </a>
+    
+    <div class="item icon popup" title="Control Panel" data-position="bottom center"> 
+      <$link to="$:/ControlPanel"><i class="inverted icon setting"></i></$link>
+    </div>
+    
+    <div class="right menu"> 
+      <$reveal type="match" state="$:/isEncrypted" text="yes"> 
+        <a class="item icon popup" title="Disable encryption" data-position="bottom center" href="#"> 
+          <$button message="tw-clear-password"><i class="inverted lock icon"></i></$button>
+        </a>
+      </$reveal>
+      <$reveal type="nomatch" state="$:/isEncrypted" text="yes"> 
+        <a class="item icon popup" title="Enable encryption" data-position="bottom center" href="#"> 
+          <$button message="tw-set-password"><i class="inverted unlock alternate icon"></i></$button>
+        </a>
+      </$reveal>
+      <a class="popup icon github item" title="View on Github" data-position="bottom center" href="https://github.com/dnordstrom/kit.tiddlywiki"> 
+        <i class="icon github"></i>
+      </a>
+      <a class="item icon" href="#"> 
+        <$button message="tw-full-screen"><i class="inverted fullscreen icon"></i></$button>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="ui one column page grid"> 
+  <div class="column"> 
+    
+    <$reveal state="$:/temp/search" type="match" text=""> 
+      <div id="logo">{{rocketdrop.png}}</div>
+    </$reveal>
+    
+    <$reveal state="$:/temp/search" type="nomatch" text=""> 
+      <div id="logo" class="active">{{rocketdrop.png}}</div>
+    </$reveal>
+    
+    <div id="search"> 
+      <$linkcatcher to="$:/temp/search"> 
+        <div class="ui massive icon search input"> 
+          <$edit tiddler="$:/temp/search" type="search" requireFocus="yes"/>
+          <i class="search icon"></i>
+        </div>
+      </$linkcatcher>
+      
+      <$reveal state="$:/temp/search" type="nomatch" text=""> 
+        <div class="search-results"> 
+          <span class="tw-list-frame top"> 
+            <span class="tw-list-element"> 
+              <span class="tw-tiddler"> 
+                <span class="tw-view-link"> 
+                  Found <$count filter="[!is[system]search{$:/temp/search}]"/> pages.
+                </span>
+              </span>
+            </span>
+          </span>
+          
+          <$list filter="[!is[system]search{$:/temp/search}sort[title]limit[250]]"/>
+          
+          <span class="tw-list-frame bottom"> 
+            <span class="tw-list-element"> 
+              <span class="tw-tiddler"> 
+                <span class="tw-view-link"> 
+                  Got brains? Child, please.
+                </span>
+              </span>
+            </span>
+            <span class="tw-list-element"> 
+              <span class="tw-tiddler"> 
+                <span class="tw-view-link"> 
+                  Prove it by contributing.
+                </span>
+              </span>
+            </span>
+          </span>
+        </div>
+      </$reveal>
+    </div>
+
+    <!-- The story river -->
+    <section class="story-river">
+
+    <!-- The main story -->
+    <$list filter="[list[$:/StoryList]]" history="$:/HistoryList" template="$:/core/ui/ViewTemplate" editTemplate="$:/core/ui/EditTemplate" listview={{$:/view}} itemClass="tw-tiddler-frame"/>
+
+    <!-- End of story river -->
+    </section>
+  </div>
+</div>
+
+</$import>
+
+</$navigator> 

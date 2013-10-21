@@ -1,0 +1,23 @@
+title: $:/core/templates/static.tiddler.html
+
+\define tw-wikilink-template() $uri_doubleencoded$.html
+`<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="generator" content="TiddlyWiki" />
+<meta name="tiddlywiki-version" content="`{{$:/core/templates/version}}`" />
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="static.css">
+<title>`{{$:/core/wiki/title}}`</title>
+</head>
+<body>
+`{{$:/StaticBanner||$:/core/templates/html-tiddler}}`
+<section class="story-river">
+<div class="tw-tiddler-frame">
+`<$view tiddler="$:/core/ui/ViewTemplate" format="htmlwikified"/>`
+</div>
+</section>
+</body>
+</html>
+`

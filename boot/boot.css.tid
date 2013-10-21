@@ -1,0 +1,122 @@
+title: $:/boot/boot.css
+type: text/css
+
+/*
+Basic styles used before we boot up the parsing engine
+*/
+
+/*
+Error message and password prompt
+*/
+
+.tw-password-wrapper, .tw-error-form {
+    font-family: sans-serif;
+	z-index: 20000;
+	position: fixed;
+	text-align: center;
+	width: 480px;
+	top: 4em;
+    left: 50%;
+    margin-left: -264px; /* - width/2 - paddingHorz/2 - border */
+	padding: 16px 16px 16px 16px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+
+.tw-error-form {
+	color: #fff;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+	background-color: rgb(255, 75, 75);
+	border: 8px solid rgb(255, 0, 0);
+}
+
+.tw-error-form div {
+	padding-bottom: 1em;
+}
+
+.tw-error-prompt {
+	color: #000;
+	text-shadow: none;
+}
+
+.tw-password-wrapper {
+	color: #000;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	background-color: rgb(197, 235, 183);
+	border: 8px solid rgb(164, 197, 152);
+}
+
+.tw-password-wrapper form {
+	text-align: left;
+}
+
+.tw-password-wrapper h1 {
+	font-size: 16px;
+	line-height: 20px;
+}
+
+/**
+ * Customize
+ */
+
+html body {
+    color: rgb(68, 68, 68);
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.6em;
+}
+
+body .tw-password-wrapper {
+    background: none repeat scroll 0% 0% white;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+    padding: 34px 40px;
+    top: 30%;
+}
+
+body .tw-password-wrapper h1 {
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 1.4em;
+    margin: 0px 0px 1em;
+}
+
+body .tw-password-wrapper button {
+    margin: -4px 0px 0px 8px;
+}
+
+body .tw-password-wrapper button {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    min-height: 1em;
+    outline: medium none;
+    border: medium none;
+    background-color: rgb(92, 97, 102);
+    color: rgb(255, 255, 255);
+    padding: 0.8em 1.5em;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0.2em;
+    box-shadow: 0em -0.185rem 0em rgba(0, 0, 0, 0.1) inset;
+    -moz-user-select: none;
+    -moz-box-sizing: border-box;
+    transition: opacity 0.25s ease 0s, background-color 0.25s ease 0s, color 0.25s ease 0s, background 0.25s ease 0s, box-shadow 0.25s ease 0s;
+}
+
+body .tw-password-wrapper input {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.3125em;
+    color: rgba(0, 0, 0, 0.7);
+    padding: 0.85em 1.2em;
+    font-size: 0.875em;
+}

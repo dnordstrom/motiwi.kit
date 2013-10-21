@@ -1,0 +1,17 @@
+{
+	"plugins": [
+    "tiddlywiki/fullscreen",
+    "morg/semantic",
+    "morg/jquery",
+    "morg/motiwi"
+	],
+	"themes": [
+		"morg/motiwi"
+	],
+	"doNotSave": [
+		"$:/StoryList",
+		"$:/HistoryList",
+		"$:/status/IsLoggedIn",
+		"$:/status/UserName"
+	]
+}

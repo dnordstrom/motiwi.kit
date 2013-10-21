@@ -1,0 +1,24 @@
+title: $:/core/ui/FieldEditor
+
+\define renderfield(title)
+<div class="ui form"> 
+  <label>$title$:</label>
+  <div class="ui input"> 
+    <$edit field="$title$" placeholder="Field value"/>
+  </div>
+  <$button message="tw-remove-field" param="$title$" class="ui button mini">{{$:/core/images/delete-button}} Remove</$button>
+</div>
+\end
+<$fieldmangler> 
+  <div class="tw-edit-fields"> 
+    <$list filter="[is[current]fields[]] -title -tags -text -creator -created -modified -modifier -[[draft.title]] -[[draft.of]]" macro="renderfield" itemClass="tw-fieldlist"/>
+  </div>
+
+  <div class="ui form"> 
+    <label>Add a new field:</label>
+    <div class="ui input"> 
+      <$edit tiddler="$:/NewFieldName" type="input" default="" placeholder="field name"/>
+    </div>
+    <$button message="tw-add-field" param={{$:/NewFieldName}} set="$:/NewFieldName" setTo="" class="ui button">Add</$button>
+  </div>
+</$fieldmangler>

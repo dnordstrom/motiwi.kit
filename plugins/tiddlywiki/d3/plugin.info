@@ -1,0 +1,6 @@
+{
+	"title": "$:/plugins/tiddlywiki/d3",
+	"description": "d3.js plugin for TiddlyWiki5",
+	"author": "JeremyRuston",
+	"core-version": ">=5.0.0"
+}

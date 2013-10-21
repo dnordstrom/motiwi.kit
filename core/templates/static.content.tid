@@ -1,0 +1,7 @@
+title: $:/core/templates/static.content
+type: text/vnd.tiddlywiki
+
+<!-- For Google, and people without JavaScript-->
+<$list filter="[!is[system]sort[title]]" >
+<$view field="title" format="text"></$view>
+</$list>

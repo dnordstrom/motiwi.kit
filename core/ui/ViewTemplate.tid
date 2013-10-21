@@ -1,0 +1,5 @@
+title: $:/core/ui/ViewTemplate
+modifier: JeremyRuston
+
+<div class="tw-tiddler-view"><$list filter="[is[shadow]!has[draft.of]tag[$:/tags/ViewTemplate]] [!is[shadow]!has[draft.of]tag[$:/tags/ViewTemplate]]" hackTemplate=true/>
+</div>

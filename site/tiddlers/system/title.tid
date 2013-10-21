@@ -1,0 +1,19 @@
+title: $:/core/ui/ViewTemplate/title
+tags: $:/tags/ViewTemplate
+
+<div class="tw-tiddler-title"> 
+  <h1 class="title"> 
+    <span class="tw-tiddler-controls"> 
+      <$button popup="$:/state/tiddlerInfo" qualifyTiddlerTitles="yes"><i class="info letter icon"></i></$button>
+      <$button message="tw-edit-tiddler"><i class="edit icon"></i></$button>
+      <$button message="tw-close-tiddler"><i class="remove icon"></i></$button>
+    </span>
+  
+    <$transclude title={{!!icon}}/>
+    <$view field="title"/>
+  </h1>
+  
+  <$reveal type="nomatch" text="" default="" state="$:/state/tiddlerInfo" qualifyTiddlerTitles="yes" class="tw-tiddler-info" animate="yes">
+    <$transclude title="$:/core/ui/TiddlerInfo"/>
+  </$reveal>
+</div>

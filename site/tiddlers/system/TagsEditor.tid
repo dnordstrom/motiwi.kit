@@ -1,0 +1,23 @@
+title: $:/core/ui/TagsEditor
+
+<$fieldmangler><div class="tw-edit-tags-list"><$list filter="[is[current]tags[]sort[title]]" listview="pop" itemClass="tw-tag-editor-label"><$setstyle name="background-color" value={{!!color}} class="tw-tag-label"><$view field="title" format="text" /><$button message="tw-remove-tag" param={{!!title}} class="btn-invisible tw-remove-tag-button">&times;</$button></$setstyle>
+</$list></div>
+
+<div class="edit-tags-field"> 
+  <div class="ui input"> 
+    <$edit tiddler="$:/NewTagName" type="input" default="" placeholder="Tag name" focusSet="$:/state/tagsAutoComplete" qualifyTiddlerTitles="yes"/>
+  </div>
+</div>
+<$button class="ui left attached button" popup="$:/state/tagsAutoComplete" qualifyTiddlerTitles="yes">View tags</$button>
+<$button class="ui right attached button" message="tw-add-tag" param={{$:/NewTagName}} set="$:/NewTagName" setTo="">Add tag</$button>
+
+<div class="tw-tags-autocomplete-wrapper">
+<$reveal state="$:/state/tagsAutoComplete" qualifyTiddlerTitles="yes" type="nomatch" text="" default="" class="tw-tags-autocomplete">
+
+<$linkcatcher set="$:/NewTagName" setTo="" message="tw-add-tag"><$list filter="[!is[shadow]tags[]search{$:/NewTagName}sort[title]]"><$link><$setstyle name="background-color" value={{!!color}} class="tw-tag-label"><$view field="title" format="text"/></$setstyle></$link>
+</$list>
+</$linkcatcher>
+
+</$reveal>
+</div>
+</$fieldmangler>

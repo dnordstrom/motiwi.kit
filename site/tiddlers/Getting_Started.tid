@@ -1,0 +1,23 @@
+title: Getting Started
+
+! Sidebar
+
+In the sidebar menu you'll find shortcuts to help material, the page list, and more. To see it, simply click the menu icon in the top left corner.
+
+! Navigation Bar
+
+Use the navigation bar to create pages, change preferences, or download the wiki along with any changes you've made.
+
+! Saving Changes
+
+To keep browsing or working on the wiki after you've downloaded it, just double click to open it in your browser. Just remember that you still need to download a new version to keep any changes you've made.
+
+To avoid having to download a new file after doing changes to a local copy, install the TiddlyFox add-on for Firefox. I highly recommend it and use it myself with Firefox Aurora (often updated alpha release with the latest features) to make TiddlyWiki5 even more enjoyable.
+
+! Contributing Changes
+
+For now, if you have an updated version that you'd like to put online, just send me your file and I'll upload it.
+
+TiddlyWiki5 can also run on Node.js, which would allow you to edit the online version and have it automatically save your changes to the server. It requires dynamic hosting, but eliminates the need to download your changes.
+
+Node.js hosting is extremely affordable and some providers (such as Heroku, ~AppFog, and Amazon) offer free plans, so it's definitely something to consider.

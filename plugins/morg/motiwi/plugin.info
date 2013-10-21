@@ -1,0 +1,7 @@
+{
+	"title": "$:/plugins/morg/motiwi",
+	"description": "MOtiwi JavaScript plugin",
+	"author": "Morgan",
+	"coreVersion": ">=5.0.0",
+  "plugin-priority": "3"
+}

@@ -1,0 +1,30 @@
+title: $:/core/ui/TiddlerInfo
+
+<div class="tw-tab-set"> 
+  <div class="tw-tab-buttons ui tabular menu"> 
+    <$button class="item" type="set" set="$:/state/tiddlerDropDownTabSet" setTo="refTab" qualifyTiddlerTitles="yes" selectedClass="active">References</$button>
+    <$button class="item" type="set" set="$:/state/tiddlerDropDownTabSet" setTo="taggingTab" qualifyTiddlerTitles="yes" selectedClass="active">Tagging</$button>
+    <$button class="item" type="set" set="$:/state/tiddlerDropDownTabSet" setTo="listTab" qualifyTiddlerTitles="yes" selectedClass="active">List</$button>
+    <$button class="item" type="set" set="$:/state/tiddlerDropDownTabSet" setTo="listedTab" qualifyTiddlerTitles="yes" selectedClass="active">Listed</$button>
+    <$button class="item" type="set" set="$:/state/tiddlerDropDownTabSet" setTo="fieldsTab" qualifyTiddlerTitles="yes" selectedClass="active">Fields</$button>
+  </div>
+  
+<div class="tw-tab-content">
+<$reveal type="match" state="$:/state/tiddlerDropDownTabSet" text="refTab" default="refTab" qualifyTiddlerTitles="yes">
+<$list filter="[is[current]backlinks[]sort[title]]" emptyMessage="No tiddlers link to this one">
+</$list>
+</$reveal>
+<$reveal type="match" state="$:/state/tiddlerDropDownTabSet" text="taggingTab" qualifyTiddlerTitles="yes">
+<$list filter="[is[current]tagging[]]" itemClass="tw-menu-list-item" emptyMessage="No tiddlers are tagged with this one"/>
+</$reveal>
+<$reveal type="match" state="$:/state/tiddlerDropDownTabSet" text="listTab" qualifyTiddlerTitles="yes">
+<$list filter="[list{!!title}]" itemClass="tw-menu-list-item" emptyMessage="This tiddler does not have a list"/>
+</$reveal>
+<$reveal type="match" state="$:/state/tiddlerDropDownTabSet" text="listedTab" qualifyTiddlerTitles="yes">
+<$list filter="[is[current]listed[]!is[system]]" itemClass="tw-menu-list-item" emptyMessage="This tiddler is not listed by any others"/>
+</$reveal>
+<$reveal type="match" state="$:/state/tiddlerDropDownTabSet" text="fieldsTab" qualifyTiddlerTitles="yes">
+<$transclude title="$:/core/ui/TiddlerFields"/>
+</$reveal>
+</div>
+</div>
