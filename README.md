@@ -1,4 +1,4 @@
-# MOtiwi, a theme and plugin kit for TiddlyWiki5
+# MOtiwi for TiddlyWiki5
 
 This kit includes jQuery and Semantic UI plugins, and a MOtiwi theme and plugin, as well as build scripts to generate TiddlyWiki5. Build scripts are modified versions of the default; one for encrypted wikis.
 
