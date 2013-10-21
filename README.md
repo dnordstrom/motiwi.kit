@@ -12,10 +12,10 @@ Replace “Administrator” with a username of your choice—it will show up in 
 
 Build a wiki by running `./build.sh`. Specify a domain in `build.sh` if necessary (id you need a GitHub Pages CNAME file). By default, the wiki is generated in a `./build` directory. You may specify another directory by running:
 
-`TW5_BUILD_OUTPUT=../example.com ./build.sh`.
+`TW5_BUILD_OUTPUT=../example.com ./build.sh`
 
 Build an encrypted wiki by running:
 
-`TW5_PASSWORD=password ./build_secure.sh`.
+`TW5_PASSWORD=password ./build_secure.sh`
 
 See the [TiddlyWiki5 repository](https://github.com/Jermolene/TiddlyWiki5) for more information on how to use TiddlyWiki5.
