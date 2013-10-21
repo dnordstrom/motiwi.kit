@@ -4,9 +4,13 @@ This kit includes jQuery and Semantic UI plugins, and a MOtiwi theme and plugin,
 
 ## Usage
 
-To run the web server and serve the wiki locally at `http://localhost:8080`, simply run `./serve Administrator` (replace “Administrator” with a username of your choice).
+To run the web server and serve the wiki locally at `http://localhost:8080`, simply run:
 
-Specify domain if necessary in `build.sh`, and build a wiki by running `./build.sh`. By default, it generates the wiki in a `./build` directory. You may specify another directory by running:
+`./serve Administrator`
+
+Replace “Administrator” with a username of your choice—it will show up in the meta data when editing and creating pages.
+
+Build a wiki by running `./build.sh`. Specify a domain in `build.sh` if necessary (id you need a GitHub Pages CNAME file). By default, the wiki is generated in a `./build` directory. You may specify another directory by running:
 
 `TW5_BUILD_OUTPUT=../example.com ./build.sh`.
 
