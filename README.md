@@ -1,6 +1,6 @@
 # MOtiwi, a theme and plugin kit for TiddlyWiki5
 
-This kit includes jQuery and Semantic UI plugins, and a MOtiwi theme and plugin, as well as build scripts to generate TiddlyWiki5. The build scripts are modified versions of the default `bld.sh`—one for encrypted wikis.
+This kit includes jQuery and Semantic UI plugins, and a MOtiwi theme and plugin, as well as build scripts to generate TiddlyWiki5. Build scripts are modified versions of the default; one for encrypted wikis.
 
 ## Usage
 
