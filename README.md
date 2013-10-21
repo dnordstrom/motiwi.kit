@@ -19,3 +19,9 @@ Build an encrypted wiki by running:
 `TW5_PASSWORD=password ./build_secure.sh`
 
 See the [TiddlyWiki5 repository](https://github.com/Jermolene/TiddlyWiki5) for more information on how to use TiddlyWiki5.
+
+## Credit
+
+Thanks to [Jeremy Ruston](https://github.com/Jermolene) for making [TiddlyWiki](http://tiddlywiki.com) a brilliant platform, and to the smart people—[Jack Lukic](https://github.com/jlukic) and [many contributors](https://github.com/jlukic/Semantic-UI/graphs/contributors)—creating a simple, shared vocabulary packaged in a [slick UI library](https://github.com/jlukic/Semantic-UI).
+
+jQuery is “meh” in my not-so-humble opinion, but the developers are good people.
