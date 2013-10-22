@@ -85,12 +85,7 @@ title: $:/core/ui/PageTemplate
 </div>
 
 <div class="ui one column page grid"> 
-  <div class="column"> 
-    
-    <$reveal state="$:/temp/search" type="match" text=""> 
-      <div id="logo">{{rocketdrop.png}}</div>
-    </$reveal>
-    
+  <div class="column">
     <$reveal state="$:/temp/search" type="nomatch" text=""> 
       <div id="logo" class="active">{{rocketdrop.png}}</div>
     </$reveal>

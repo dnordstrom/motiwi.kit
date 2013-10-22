@@ -12,7 +12,9 @@ Use the navigation bar to create pages, change preferences, or download the wiki
 
 To keep browsing or working on the wiki after you've downloaded it, just double click to open it in your browser. Just remember that you still need to download a new version to keep any changes you've made.
 
-To avoid having to download a new file after doing changes to a local copy, install the TiddlyFox add-on for Firefox. I highly recommend it and use it myself with Firefox Aurora (often updated alpha release with the latest features) to make TiddlyWiki5 even more enjoyable.
+To avoid having to download a new file after doing changes to a local copy, install the [[TiddlyFox|https://addons.mozilla.org/en-US/firefox/addon/tiddlyfox/]] add-on for Firefox.
+
+<$semanticmessage title="Tip" message="Consider using the add-on in combination with [[Firefox Aurora|http://www.mozilla.org/en-US/firefox/aurora/]] to make TiddlyWiki5 even more enjoyable while contributing to Firefox by testing the latest alpha (getting the latest features early)." type="info" />
 
 ! Contributing Changes
 
