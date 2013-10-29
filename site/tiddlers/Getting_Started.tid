@@ -14,7 +14,7 @@ To keep browsing or working on the wiki after you've downloaded it, just double 
 
 To avoid having to download a new file after doing changes to a local copy, install the [[TiddlyFox|https://addons.mozilla.org/en-US/firefox/addon/tiddlyfox/]] add-on for Firefox.
 
-<$semanticmessage title="Tip" message="Consider using the add-on in combination with [[Firefox Aurora|http://www.mozilla.org/en-US/firefox/aurora/]] to make TiddlyWiki5 even more enjoyable while contributing to Firefox by testing the latest alpha (getting the latest features early)." type="info" />
+<$semanticmessage title="Suggestion" icon="exclamation" message="Consider using the add-on in combination with [[Firefox Aurora|http://www.mozilla.org/en-US/firefox/aurora/]] to make TiddlyWiki5 even more enjoyable while contributing to Firefox by testing the latest alpha (and getting the latest features early)." />
 
 ! Contributing Changes
 

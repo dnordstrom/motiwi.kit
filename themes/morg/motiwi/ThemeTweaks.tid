@@ -1,37 +1,17 @@
 title: $:/ControlPanel/ThemeTweaks
 
-You can tweak certain aspects of the ''Snow White'' theme.
+You can tweak certain aspects of the MOtiwi theme by changing the settings on this page.
 
-//Currently, you need to ''save and restart'' TiddlyWiki before these changes take effect. Also take care to preserve any backticks (&#96;) in the settings//
-
-! Colours
-
-* Primary colour: <$edit tiddler="$:/themes/motiwi/motiwi/colours" index="primary" default="" type="color"/>
-* Background colour: <$edit tiddler="$:/themes/motiwi/motiwi/colours" index="background" default="" type="color"/>
-* Foreground colour: <$edit tiddler="$:/themes/motiwi/motiwi/colours" index="foreground" default="" type="color"/>
-* Page background colour: <$edit tiddler="$:/themes/motiwi/motiwi/colours" index="pagebackground" default="" type="color"/>
-* Medium contrast color: <$edit tiddler="$:/themes/motiwi/motiwi/colours" index="medium" default="" type="color"/>
-
-! Colour mappings
-
-* Tiddler background colour mapping: <$edit tiddler="$:/themes/motiwi/motiwi/colourmappings" index="tiddlerbackground" default="" type="input"/>
-* Tiddler foreground colour mapping: <$edit tiddler="$:/themes/motiwi/motiwi/colourmappings" index="foreground" default="" type="input"/>
-* Page background colour mapping: <$edit tiddler="$:/themes/motiwi/motiwi/colourmappings" index="pagebackground" default="" type="input"/>
-* Link background colour mapping: <$edit tiddler="$:/themes/motiwi/motiwi/colourmappings" index="linkbackground" default="" type="input"/>
-* Link foreground colour mapping: <$edit tiddler="$:/themes/motiwi/motiwi/colourmappings" index="linkforeground" default="" type="input"/>
-* Dropdown background colour mapping: <$edit tiddler="$:/themes/motiwi/motiwi/colourmappings" index="dropdownbackground" default="" type="input"/>
-* Dropdown border colour mapping: <$edit tiddler="$:/themes/motiwi/motiwi/colourmappings" index="dropdownborder" default="" type="input"/>
+Currently, you need to ''save and restart'' TiddlyWiki before these changes take effect. Also take care to preserve any backticks (&#96;) in the settings.
 
 ! Settings
 
-* Font family: <$edit tiddler="$:/themes/motiwi/motiwi/settings" index="fontfamily" default="" type="input"/>
+''Primary color''
+<$edit tiddler="$:/themes/motiwi/motiwi/settings" index="primarycolor" default="" type="color"/>
 
-! Sizes
+''Shadow and border color''
+<$edit tiddler="$:/themes/motiwi/motiwi/settings" index="shadowcolor" default="" type="color"/>
 
-* Font size: <$edit tiddler="$:/themes/motiwi/motiwi/metrics" index="fontsize" default="" type="input"/>
-* Line height: <$edit tiddler="$:/themes/motiwi/motiwi/metrics" index="lineheight" default="" type="input"/>
-* Story left position //(the distance between the left of the screen and the left margin of the story river or tiddler area)//: <$edit tiddler="$:/themes/motiwi/motiwi/metrics" index="storyleft" default="" type="input"/>
-* Story top position //(the distance between the top of the screen ad the top margin of the story river or tiddler area)//: <$edit tiddler="$:/themes/motiwi/motiwi/metrics" index="storytop" default="" type="input"/>
-* Story right //(the distance between the left side of the screen and the left margin of the sidebar area)//: <$edit tiddler="$:/themes/motiwi/motiwi/metrics" index="storyright" default="" type="input"/>
-* Story width //(the width of the story river or tiddler area)//: <$edit tiddler="$:/themes/motiwi/motiwi/metrics" index="storywidth" default="" type="input"/>
+''Primary font family''
+<$edit tiddler="$:/themes/motiwi/motiwi/settings" index="primaryfontfamily" default="" type="input"/>
 

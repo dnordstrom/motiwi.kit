@@ -1,4 +1,6 @@
-title: $:/themes/motiwi/motiwi/settings
+title: $:/themes/morg/motiwi/settings
 type: application/x-tiddler-dictionary
 
-fontfamily: `"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif`
+primaryfontfamily: `"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif`
+primarycolor: `#5BBD72`
+shadowcolor: `rgba(0, 0, 0, 0.15)`

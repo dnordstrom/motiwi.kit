@@ -59,7 +59,7 @@ SemanticMessageWidget.prototype.generate = function() {
 
   ////
   // Color
-  ///
+  ////
   
   if (this.color) {
     classes.push(this.color); 

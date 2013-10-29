@@ -2,6 +2,7 @@
 	"plugins": [
     "tiddlywiki/fullscreen",
     "morg/semantic",
+    "morg/stellar",
     "morg/jquery",
     "morg/motiwi"
 	],

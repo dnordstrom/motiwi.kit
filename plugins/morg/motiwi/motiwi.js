@@ -16,4 +16,9 @@ jQuery(function($) {
   })
 
   $('.popup').popup()
+  
+  $.stellar({
+    horizontalScrolling: false,
+    hideDistantElements: false
+  })
 })

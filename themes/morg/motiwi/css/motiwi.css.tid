@@ -75,3 +75,46 @@ tags: [[$:/tags/stylesheet]]
 
 {{$:/plugins/morg/semantic/semantic.min.css}}
 {{$:/themes/motiwi/motiwi/css/application.css}}
+
+/**
+ * Settings
+ */
+
+html, body {
+  font-family: {{$:/themes/morg/motiwi/settings##primaryfontfamily}};
+}
+
+a:link,
+a:visited,
+a:active,
+a:focus {
+  color: {{$:/themes/morg/motiwi/settings##primarycolor}};
+}
+
+.ui.main.menu .item a:hover i.icon,
+.ui.main.menu a.item:hover i.icon {
+  color: {{$:/themes/morg/motiwi/settings##primarycolor}};
+}
+
+div#search {
+  background: {{$:/themes/morg/motiwi/settings##primarycolor}};
+}
+
+.tw-tiddler-controls button i.icon,
+.tw-page-controls button i.icon,
+.tw-page-controls a i.icon {
+  border: 3px solid {{$:/themes/morg/motiwi/settings##primarycolor}};
+  color: {{$:/themes/morg/motiwi/settings##primarycolor}};
+}
+
+.ui.bottom.center.popup:before {
+  box-shadow: -1px -1px 1px {{$:/themes/morg/motiwi/settings##shadowcolor}};
+}
+
+.ui.popup:before {
+  box-shadow: 1px 1px 1px {{$:/themes/morg/motiwi/settings##shadowcolor}};
+}
+
+.ui.popup {
+  box-shadow: 0px 1px 1px {{$:/themes/morg/motiwi/settings##shadowcolor}};
+}
