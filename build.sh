@@ -13,18 +13,7 @@ if [  -z "$TW5_BUILD_OUTPUT" ]; then
     TW5_BUILD_OUTPUT=./build
 fi
 
-if [  ! -d "$TW5_BUILD_OUTPUT" ]; then
-    echo 'A valid TW5_BUILD_OUTPUT environment variable must be set'
-    exit 1
-fi
-
 echo "Using TW5_BUILD_OUTPUT as [$TW5_BUILD_OUTPUT]"
-
-##
-# Make the CNAME file that GitHub Pages requires
-##
-
-echo "example.com" > $TW5_BUILD_OUTPUT/CNAME
 
 ##
 # Create `static` directory if necessary, deleting existing content
@@ -32,6 +21,12 @@ echo "example.com" > $TW5_BUILD_OUTPUT/CNAME
 
 mkdir -p $TW5_BUILD_OUTPUT/static
 rm $TW5_BUILD_OUTPUT/static/*
+
+##
+# Make the CNAME file that GitHub Pages requires
+##
+
+echo "example.com" > $TW5_BUILD_OUTPUT/CNAME
 
 # Build,
 #  index.html: the main file, including content

@@ -13,11 +13,6 @@ if [  -z "$TW5_BUILD_OUTPUT" ]; then
     TW5_BUILD_OUTPUT=./build
 fi
 
-if [  ! -d "$TW5_BUILD_OUTPUT" ]; then
-    echo 'A valid TW5_BUILD_OUTPUT environment variable must be set'
-    exit 1
-fi
-
 if [  ! -d "$TW5_PASSWORD" ]; then
     echo 'A valid TW5_PASSWORD environment variable must be set'
     exit 1
@@ -29,6 +24,7 @@ echo "Using TW5_BUILD_OUTPUT as [$TW5_BUILD_OUTPUT]"
 # Make the CNAME file that GitHub Pages requires
 ##
 
+mkdir -p $TW5_BUILD_OUTPUT
 echo "example.com" > $TW5_BUILD_OUTPUT/CNAME
 
 ##
