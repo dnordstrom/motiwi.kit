@@ -7,11 +7,11 @@ Currently, you need to ''save and restart'' TiddlyWiki before these changes take
 ! Settings
 
 ''Primary color''
-<$edit tiddler="$:/themes/motiwi/motiwi/settings" index="primarycolor" default="" type="color"/>
+<$edit tiddler="$:/themes/morg/motiwi/settings" index="primarycolor" default="" type="color"/>
 
 ''Shadow and border color''
-<$edit tiddler="$:/themes/motiwi/motiwi/settings" index="shadowcolor" default="" type="color"/>
+<$edit tiddler="$:/themes/morg/motiwi/settings" index="shadowcolor" default="" type="color"/>
 
 ''Primary font family''
-<$edit tiddler="$:/themes/motiwi/motiwi/settings" index="primaryfontfamily" default="" type="input"/>
+<$edit tiddler="$:/themes/morg/motiwi/settings" index="primaryfontfamily" default="" type="input"/>
 

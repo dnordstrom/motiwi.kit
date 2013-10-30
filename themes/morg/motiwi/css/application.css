@@ -261,6 +261,7 @@ svg.tw-image-done-button:hover {
   padding: 164px 0px 150px 0px;
   position: relative;
   text-align: center;
+  z-index: 10000;
 }
 
 #search input {
@@ -291,6 +292,7 @@ svg.tw-image-done-button:hover {
   border-top: none;
   padding: 8px 0;
   text-align: left;
+  z-index: 10000;
 }
 
 .search-results .tw-list-element {
@@ -328,7 +330,7 @@ svg.tw-image-done-button:hover {
 }
 
 .ui.main.menu.fixed {
-  z-index: 10000;
+  z-index: 20000;
 }
 
 .ui.main.menu .tw-button {
@@ -778,6 +780,10 @@ i.icon {
 
 .body .ui.label .icon {
   margin: 0;
+}
+
+.ui.message p {
+  font-size: 16px;
 }
 
 .ui.list .description {

@@ -58,7 +58,7 @@ title: $:/core/ui/PageTemplate
         </a>
     
         <div class="title item"> 
-          {{Site Title}}
+          {{SiteTitle}}
         </div>
     
         <a class="item icon popup" title="Download As File" data-position="bottom center"> 
@@ -74,7 +74,7 @@ title: $:/core/ui/PageTemplate
         </div>
     
         <div class="subtitle item"> 
-          {{Site Subtitle}}
+          {{SiteSubtitle}}
         </div>
     
         <div class="right menu"> 

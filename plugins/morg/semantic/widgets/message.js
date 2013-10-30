@@ -49,7 +49,7 @@ SemanticMessageWidget.prototype.generate = function() {
   
   if (!this.icon) {
     if (this.type == "info") {
-      this.icon = "attention"
+      this.icon = "exclamation mark"
     } else if (this.type == "error") {
       this.icon = "warning"
     } else if (this.type == "success") {
